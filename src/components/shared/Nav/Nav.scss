@@ -1,0 +1,115 @@
+.nav-container{
+  padding: 0 3%;
+  display: flex;
+  height: max(80px,5.5vw);
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .nav-left{
+    display: flex;
+    gap: max(4em, 1.5vw);
+    height: 100%;
+    align-items: center;
+    margin-right: 30px;
+    .nav-iconn{
+      width: max(148px, 7vw);
+      height: max(43px, 2vw);
+      .nav-icon{
+        content: url('../../../assets/shared/navbar-assets/tracel-icon.png');
+      }
+    }
+    .nav-links{
+      display: flex;
+      align-items: center;
+      gap: max(1.2em,2vw);
+      .nav-link{
+        height: max(22px,1vw);
+        a{
+          display: flex;
+          align-items: center;
+          gap: max(9px,0.45vw);
+          font-family: prompt-medium;
+          font-size: max(17px,0.75vw);
+          color: #000000;
+        }
+      }
+    }
+    @media(max-width:991px){
+      .nav-links{
+        display: none;
+      }
+    }
+  }
+  .nav-right{
+    display: flex;
+    gap: max(30px, 2.5vw);
+    .nav-download{
+      display: flex;
+      align-items: center;
+      gap: max(15px,1vw);
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: max(5px,0.025vw);
+        font-family: urbanist-medium;
+        font-size: 13px;
+        color: #242222;
+        padding: max(8px,0.6vw) max(15px,0.75vw);
+        height: max(43px, 2vw);
+        border: 1px solid #707070;
+        border-radius: max(28px, 1.4vw);
+        .button-icon{
+          display: block;
+          width: 16px;
+          height: 20px;
+        }
+      }
+    }
+    @media(max-width:1509px){
+      .nav-download{
+        display: none;
+      }
+    }
+    .nav-auth{
+      display: flex;
+      align-items: center;
+      gap: max(15px,1vw);
+      .btn{
+        font-family: prompt-medium;
+        font-size: 17px;
+      }
+      .uncolored-btn{
+        color:#000000;
+      }
+      .colored-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#FFFFFF;
+        background-color: #1ED47F;
+        width:max(120px, 6vw);
+        height: max(40px, 2.5vw);
+        border-radius: max(26px, 1.5vw) ;
+      }
+    }
+  }
+  @media(max-width:991px){
+    .nav-right{
+      display: none;
+    }
+  }
+  .nav-hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  @media (max-width:991px){
+    .nav-hamburger{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+
+}

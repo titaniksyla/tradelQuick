@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Fonts ---------------- */
+@font-face {
+  font-family: courierprime-reg;
+  src: url('../src/fonts/CourierPrime-Regular.woff');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: prompt-light;
+  src: url('../src/fonts/Prompt-Light.woff');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: prompt-medium;
+  src: url('../src/fonts/Prompt-Medium.woff');
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: prompt-semibold;
+  src: url('../src/fonts/Prompt-SemiBold.woff');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: prompt-bold ;
+  src: url('../src/fonts/Prompt-Bold.woff');
+}
+
+@font-face {
+  font-family: sf-display-bold;
+  src: url('../src/fonts/SF-Pro-Display-Bold.woff');
+}
+@font-face {
+  font-family: sf-display-reg;
+  src: url('../src/fonts/SF-Pro-Display-Regular.woff');
+}
+@font-face {
+  font-family: sf-display-semibold;
+  src: url('../src/fonts/SF-Pro-Display-Semibold.woff');
+}
+@font-face {
+  font-family: sf-text-semibold;
+  src: url('../src/fonts/SF-Pro-Text-Semibold.woff');
+}
+@font-face {
+  font-family: urbanist-light;
+  src: url('../src/fonts/Urbanist-Light.woff');
+}
+@font-face {
+  font-family: urbanist-medium;
+  src: url('../src/fonts/Urbanist-Medium.woff');
 }
