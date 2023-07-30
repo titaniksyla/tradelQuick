@@ -39,7 +39,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 17px;
         .email-container,
         .password-container{
           height: 55px;
@@ -178,27 +178,78 @@
       content: url('./../../../assets/pages/login-assets/utopia-rocket.png');
     }
   }
-  // @media(max-width: 991px) {
-  //   .login-right{
-  //     .carts-container{
-  //       top: 10%;
-  //     }
-  //   }
-  // }
-  // @media(max-width: 885px) {
-  //   .login-right{
-  //     .carts-container{
-  //       top: 14%;
-  //     }
-  //   }
-  // }
-  // @media(max-width: 750px) {
-  //   .login-right{
-  //     .carts-container{
-  //       top: 18%;
-  //     }
-  //   }
-  // }
+  @media(max-width: 1490px) {
+    .login-left{
+      .login-form-container{
+        gap: 20px;
+        .login-title{
+          gap: 5px;
+          h3{
+            font-size: 24px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .login-form{
+          gap: 12px;
+          .email-container,
+          .password-container{
+            padding: 5px 15px;
+            height: 32.5px;
+            img{
+              height: 75%;
+            }
+            input{
+              height: 75%;
+              font-size: 14px;
+            }
+          }
+          .email-container{
+            img{
+              width: 18px;
+            }
+          }
+          .password-container{
+            padding: 4px 15px;
+          }
+          .form-checkers{
+            p{
+              font-size: 10px;
+            }
+            .remember-check{
+              gap: 10px;
+              margin: 5px;
+              .check-container{
+                width: 18px;
+                height: 18px;
+                img{
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+              p{
+                font-size: 10px;
+              }
+            }
+          }
+          .login-info{
+            padding-top: 0%;
+            .login-btn{
+              height: 32.5px;
+              p{
+                font-size: 16px;
+              }
+            }
+            p{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @media(max-width: 920px){
     .login-left{
       width: 60%;

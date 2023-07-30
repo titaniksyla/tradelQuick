@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     .signup-form-container{
-      width: 90%;
+      width: 80%;
       padding: 5% 10%;
       // width: max(600px, 30vw);
       height: 100%;
@@ -25,7 +25,7 @@
       .signup-title{
         display: flex;
         flex-direction: column;
-        // gap:15px;
+        gap:15px;
         h3{
           font-family: prompt-light;
           font-size: 30px;
@@ -41,7 +41,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 17px;
         .fullname-container,
         .email-container,
         .password-container,
@@ -76,15 +76,10 @@
         .form-checkers{
           display: flex;
           flex-direction: column;
-          p{
-            text-align: end;
-            color: #3C77EC;
-            font-size: 14px;
-            font-family: prompt-light;
-          }
           .remember-check{
             display: flex;
             align-items: center;
+            margin: 25px 0;
             gap: 20px;
             .check-container{
               width: 23px;
@@ -95,16 +90,20 @@
 
               border: 1px solid #DBD3D3;
               border-radius: 50%;
+
+              cursor: pointer;
             }
             p{
               color: #0F0D0D;
               font-size: 14px;
               font-family: prompt-light;
+              a{
+                color: #0F51C5;
+              }
             }
           }
         }
         .signup-info{
-          padding-top: 8%;
           width: 100%;
           display: flex;
           flex-direction: column;
@@ -143,15 +142,16 @@
             }
           }
         }
+
       }
       .signup-links{
         width: 100%;
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 5%;
         .icon-container{
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
           a{
             width: 100%;
             height: 100%;
@@ -169,39 +169,195 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .carts-container{
+    .test-container{
       position: absolute;
       top: 2%;
-      left: 15%;
-      width: 45%;
-      height: 50%;
-      content: url('./../../../assets/pages/login-assets/carts.png');
+      right: 22%;
+      width: 25%;
+      height: 75%;
+      content: url('./../../../assets/pages/signup-assets/iphone-scr.png');
     }
-    .utopia-container{
+    .chair-container{
       position: absolute;
-      width: 80%;
+      bottom: 27%;
+      right: 16%;
+      width: 17%;
+      height: 37%;
+      content: url('./../../../assets/pages/signup-assets/chair-screen.png');
+    }
+    .rocket-container{
+      position: absolute;
+      width: 90%;
       height: 100%;
-      content: url('./../../../assets/pages/login-assets/utopia-rocket.png');
+      content: url('./../../../assets/pages/signup-assets/rocket.png');
+    }
+  }
+
+  @media(max-width: 1490px) {
+    .signup-left{
+      .signup-form-container{
+        gap: 20px;
+        .signup-title{
+          gap: 5px;
+          h3{
+            font-size: 24px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .signup-form{
+          gap: 12px;
+          .email-container,
+          .password-container,
+          .fullname-container,
+          .confirm-password-container{
+            padding: 5px 15px;
+            height: 32.5px;
+            img{
+              height: 75%;
+            }
+            input{
+              height: 75%;
+              font-size: 14px;
+            }
+          }
+          .email-container{
+            img{
+              width: 18px;
+            }
+          }
+          .password-container,
+          .confirm-password-container{
+            padding: 4px 15px;
+          }
+          .form-checkers{
+            p{
+              font-size: 10px;
+            }
+            .remember-check{
+              gap: 10px;
+              margin: 5px;
+              .check-container{
+                width: 18px;
+                height: 18px;
+                img{
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+              p{
+                font-size: 10px;
+              }
+            }
+          }
+          .signup-info{
+            .signup-btn{
+              height: 32.5px;
+              p{
+                font-size: 16px;
+              }
+            }
+            p{
+              font-size: 10px;
+            }
+          }
+        }
+      }
     }
   }
 
   @media(max-width: 920px){
-    .login-left{
+    .signup-left{
       width: 60%;
     }
-    .login-right{
+    .signup-right{
       width: 40%;
     }
   }
 
   @media(max-width: 768px) {
-    .login-left{
+    .signup-left{
       width: 100%;
       margin: 10% 0;
     }
-    .login-right{
+    .signup-right{
       display: none;
     }
   }
 
+  @media(max-width: 430px) {
+    .signup-left{
+      width: 100%;
+      .signup-form-container{
+        width: 80%;
+        gap: 15px;
+        .signup-title{
+          gap: 0px;
+          h3{
+            font-size: 20px;
+          }
+          p{
+            font-size: 10px;
+          }
+        }
+        .signup-form{
+          gap: 10px;
+          .email-container,
+          .password-container,
+          .fullname-container,
+          .confirm-password-container{
+            padding: 4px 10px;
+            height: 30px;
+            img{
+              height: 75%;
+            }
+            input{
+              height: 75%;
+              font-size: 14px;
+            }
+          }
+          .email-container{
+            img{
+              width: 18px;
+            }
+          }
+          .password-container{
+            padding: 4px 15px;
+          }
+          .form-checkers{
+            p{
+              font-size: 10px;
+            }
+            .remember-check{
+              gap: 10px;
+              margin: 5px;
+              .check-container{
+                width: 18px;
+                height: 18px;
+                img{
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+              p{
+                font-size: 10px;
+              }
+            }
+          }
+          .signup-info{
+            .signup-btn{
+              height: 30px;
+              p{
+                font-size: 10px;
+              }
+            }
+            p{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

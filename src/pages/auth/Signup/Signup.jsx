@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Signup.scss'
 
 import { loginData } from './../Login/loginData'
@@ -12,6 +12,16 @@ import check from './../../../assets/pages/login-assets/check.png'
 import { Link } from 'react-router-dom'
 
 function Signup (){
+
+  const[remeberMe, setRememberMe] = useState(false);
+
+  function toggleRemeber(){
+    if(remeberMe)
+      setRememberMe(false);
+    else 
+      setRememberMe(true);
+  }
+
   return (
     <div className='signup-container'>
       <div className="signup-left">
@@ -48,11 +58,18 @@ function Signup (){
 
             <div className="form-checkers">
               <div className="remember-check">
-                <div className="check-container">
-                  <img src={check} alt="check-icon" />
+                <div className="check-container" onClick={toggleRemeber}>
+                  {remeberMe ? <img src={check} alt="check-icon" /> : ''}
                 </div>
                 <p>I agree to our <Link to='/'>Terms & Conditions</Link> and <Link to='/'>Privacy Policy</Link></p>
               </div>
+            </div>
+
+            <div className="signup-info">
+              <div className="signup-btn">
+                <p>Sign up</p>
+              </div>
+              <p>Already have an account? <Link to='/login'>Log In</Link></p>
             </div>
           </form>
 
@@ -69,8 +86,9 @@ function Signup (){
         </div>
       </div>
       <div className="signup-right">
-          <div className="carts-container"></div>
-          <div className="utopia-container"></div>
+          <div className="test-container"></div>
+          <div className="chair-container"></div>
+          <div className="rocket-container"></div>
       </div>
     </div>
   )
