@@ -32,8 +32,8 @@ function Nav () {
         })}
         </div>
         <div className='nav-auth'>
-          <Link to='/' className='btn uncolored-btn'>Log in</Link>
-          <Link to='/' className='btn colored-btn'>Sign up</Link>
+          <Link to='/login' className='btn uncolored-btn'>Log in</Link>
+          <Link to='/signup' className='btn colored-btn'>Sign up</Link>
         </div>
       </div>
       <div className="nav-hamburger" >

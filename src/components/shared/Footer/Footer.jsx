@@ -15,7 +15,7 @@ function Footer() {
             <div className="footer-logo">
               <Link to="/"><img src={tradelIcon} alt="tradel-icon" /></Link>
             </div>
-            <p>Buy and Sell Quality Clothes For The Best Prices.</p>
+            <p>Turn Your Unwanted Thinks Into Cash.</p>
           </div>
           <div className="footer-left-bottom">
             <p>Download App</p>
@@ -39,6 +39,7 @@ function Footer() {
                   <p>{link.link2}</p>
                   <p>{link.link3}</p>
                   <p>{link.link4}</p>
+                  <p>{link.link5}</p>
                 </div>
               </div>
             )

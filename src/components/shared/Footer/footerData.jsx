@@ -10,16 +10,18 @@ export const footerLinksData = [
     title: 'Who are we?',
     link1: 'About us',
     link2: 'Contact us',
-    link3: 'Developers',
-    link4: 'White Paper'
+    link3: 'Business Cooperation',
+    link4: 'Developers',
+    link5: 'White Paper'
   },
   {
     id:2,
     title: 'Services',
-    link1: 'Buying Clothes',
-    link2: 'Selling Clothes',
-    link3: 'Customer Services',
-    link4: 'Sustainability'
+    link1: 'Trading Services',
+    link2: 'Financial services',
+    link3: 'Banking services',
+    link4: 'Sustainability',
+    link5: ''
   },
   {
     id:3,
@@ -27,15 +29,17 @@ export const footerLinksData = [
     link1: 'News',
     link2: 'Reviews',
     link3: 'How to',
-    link4: 'Topics'
+    link4: 'Topics',
+    link5: 'Tutorials'
   },
   {
     id:4,
-    title: 'Policies',
-    link1: 'Clothing Line Policies',
+    title: 'Tradel Policies',
+    link1: 'Tradel Policies',
     link2: 'Cookies',
     link3: 'Help Centre',
-    link4: 'FAQ\'s'
+    link4: 'FAQ\'s',
+    link5: ''
   }
 ];
 

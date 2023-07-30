@@ -1,0 +1,285 @@
+.login-container{
+  width: 100%;
+  padding: 5%;
+  background-image: url('./../../../assets/pages/login-assets/backgroundIMG.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  .login-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .login-form-container{
+      width: 80%;
+      padding: 5% 10%;
+      height: 100%;
+      border-radius: 25px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: max(35px,1.75vw);
+      .login-title{
+        display: flex;
+        flex-direction: column;
+        h3{
+          font-family: prompt-light;
+          font-size: 30px;
+        }
+        p{
+          font-family: prompt-light;
+          font-size: 16px;
+          color: #ADB5BD;
+        }
+      }
+      .login-form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .email-container,
+        .password-container{
+          height: 55px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 17px;
+          gap: 10px;
+          border: 1px solid #ADB5BD;
+          border-radius: 27.5px;
+          input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-family: prompt-light;
+            font-size: 17px;
+            margin-left: 6px ;
+          }
+        }
+        .password-container{
+          padding: 5px 22px;
+        }
+        .form-checkers{
+          display: flex;
+          flex-direction: column;
+          p{
+            text-align: end;
+            color: #3C77EC;
+            font-size: 14px;
+            font-family: prompt-light;
+          }
+          .remember-check{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .check-container{
+              width: 23px;
+              height: 23px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              border: 1px solid #DBD3D3;
+              border-radius: 50%;
+
+              cursor: pointer;
+            }
+            p{
+              color: #0F0D0D;
+              font-size: 14px;
+              font-family: prompt-light;
+            }
+          }
+        }
+        .login-info{
+          padding-top: 8%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: center;
+          .login-btn{
+            background-color: #1ED47F;
+            height: 55px;
+            width: 100%;
+
+            cursor: pointer;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 27.5px;
+            p{
+              font-family: prompt-light;
+              font-size: 18px;
+              color: #FFF;
+              text-align: center;
+            }
+            &:hover{
+              transition: ease-in-out 0.2s;
+              width: 90%;
+            }
+          }
+          p{
+            text-align: center;
+            font-family: prompt-light;
+            font-size: 14px;
+            color: #747C87;
+            a{
+              color:#0F51C5;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .login-links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+        .icon-container{
+          width: 40px;
+          height: 40px;
+          a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .login-right{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .carts-container{
+      position: absolute;
+      top: 2%;
+      left: 15%;
+      width: 45%;
+      height: 50%;
+      content: url('./../../../assets/pages/login-assets/carts.png');
+    }
+    .utopia-container{
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      content: url('./../../../assets/pages/login-assets/utopia-rocket.png');
+    }
+  }
+  // @media(max-width: 991px) {
+  //   .login-right{
+  //     .carts-container{
+  //       top: 10%;
+  //     }
+  //   }
+  // }
+  // @media(max-width: 885px) {
+  //   .login-right{
+  //     .carts-container{
+  //       top: 14%;
+  //     }
+  //   }
+  // }
+  // @media(max-width: 750px) {
+  //   .login-right{
+  //     .carts-container{
+  //       top: 18%;
+  //     }
+  //   }
+  // }
+  @media(max-width: 920px){
+    .login-left{
+      width: 60%;
+    }
+    .login-right{
+      width: 40%;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .login-left{
+      width: 100%;
+      margin: 10% 0;
+    }
+    .login-right{
+      display: none;
+    }
+  }
+  @media(max-width: 430px) {
+    .login-left{
+      width: 100%;
+      .login-form-container{
+        gap: 20px;
+        .login-title{
+          h3{
+            font-size: 24px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .login-form{
+          .email-container,
+          .password-container{
+            padding: 4px 10px;
+            height: 30px;
+            img{
+              height: 75%;
+            }
+            input{
+              height: 75%;
+              font-size: 14px;
+            }
+          }
+          .email-container{
+            img{
+              width: 18px;
+            }
+          }
+          .password-container{
+            padding: 4px 15px;
+          }
+          .form-checkers{
+            p{
+              font-size: 10px;
+            }
+            .remember-check{
+              gap: 10px;
+              .check-container{
+                width: 18px;
+                height: 18px;
+                img{
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+              p{
+                font-size: 12px;
+              }
+            }
+          }
+          .login-info{
+            .login-btn{
+              height: 30px;
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

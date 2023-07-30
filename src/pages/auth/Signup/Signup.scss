@@ -1,0 +1,207 @@
+.signup-container{
+  width: 100%;
+  padding: 5%;
+  background-image: url('./../../../assets/pages/login-assets/backgroundIMG.png');
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+
+  display: flex;
+  .signup-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .signup-form-container{
+      width: 90%;
+      padding: 5% 10%;
+      // width: max(600px, 30vw);
+      height: 100%;
+      border-radius: 25px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      .signup-title{
+        display: flex;
+        flex-direction: column;
+        // gap:15px;
+        h3{
+          font-family: prompt-light;
+          font-size: 30px;
+        }
+        p{
+          font-family: prompt-light;
+          font-size: 16px;
+          color: #ADB5BD;
+        }
+      }
+      .signup-form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .fullname-container,
+        .email-container,
+        .password-container,
+        .confirm-password-container{
+          height: 55px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 17px;
+          gap: 10px;
+          border: 1px solid #ADB5BD;
+          border-radius: 27.5px;
+          input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-family: prompt-light;
+            font-size: 17px;
+            margin-left: 6px ;
+          }
+        }
+        .fullname-container{
+          padding: 5px 24px;
+        }
+        .password-container,
+        .confirm-password-container{
+          padding: 5px 22px;
+        }
+        .form-checkers{
+          display: flex;
+          flex-direction: column;
+          p{
+            text-align: end;
+            color: #3C77EC;
+            font-size: 14px;
+            font-family: prompt-light;
+          }
+          .remember-check{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .check-container{
+              width: 23px;
+              height: 23px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              border: 1px solid #DBD3D3;
+              border-radius: 50%;
+            }
+            p{
+              color: #0F0D0D;
+              font-size: 14px;
+              font-family: prompt-light;
+            }
+          }
+        }
+        .signup-info{
+          padding-top: 8%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: center;
+          .signup-btn{
+            background-color: #1ED47F;
+            height: 55px;
+            width: 100%;
+
+            cursor: pointer;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 27.5px;
+            p{
+              font-family: prompt-light;
+              font-size: 18px;
+              color: #FFF;
+              text-align: center;
+            }
+            &:hover{
+              transition: ease-in-out 0.2s;
+              width: 90%;
+            }
+          }
+          p{
+            text-align: center;
+            font-family: prompt-light;
+            font-size: 14px;
+            color: #747C87;
+            a{
+              color:#0F51C5;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .signup-links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        .icon-container{
+          width: 40px;
+          height: 40px;
+          a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .signup-right{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .carts-container{
+      position: absolute;
+      top: 2%;
+      left: 15%;
+      width: 45%;
+      height: 50%;
+      content: url('./../../../assets/pages/login-assets/carts.png');
+    }
+    .utopia-container{
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      content: url('./../../../assets/pages/login-assets/utopia-rocket.png');
+    }
+  }
+
+  @media(max-width: 920px){
+    .login-left{
+      width: 60%;
+    }
+    .login-right{
+      width: 40%;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .login-left{
+      width: 100%;
+      margin: 10% 0;
+    }
+    .login-right{
+      display: none;
+    }
+  }
+
+}

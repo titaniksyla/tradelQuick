@@ -167,9 +167,11 @@
 @media(max-width:627px){
   .footer-right{
     flex-direction: column;
+    align-items: center;
     .footer-links-container{
       width: 100%;
       align-items: center;
+      text-align: center;
       .footer-link-container{
         p{
           text-align: center;
